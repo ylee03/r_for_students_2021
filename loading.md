@@ -1,4 +1,5 @@
 # 자료철 불러오기(5/18/2021 준비 파일)
+- 5월 26일 수정본
 
 ## Orthodont 자료
 
@@ -111,14 +112,11 @@ Orthodont 자료는 R의 기본 설치에 포함된 nlme 패키지에 들어 있
 
 ## nycflights 자료
 
-해들리 위컴은(http://hadley.nz) R에서 관계형DB 명령을 구현하는 함수 모음집인 dplyr을 제작하면서 연습용 자료철 nycflights13 (우리는 nycflights로 부른다)을 함께 배포하였다. R 패키지 nycflights13에 들어있지만 자동으로 tibble 패키지가 함께 로딩 되므로 우리는 그 패키지 없이 깃허브의 원본 csv 파일을 사용할 것이다.
+해들리 위컴은(http://hadley.nz) R에서 관계형DB 명령을 구현하는 함수 모음집인 dplyr을 제작하면서 연습용 자료철 nycflights13 (우리는 nycflights로 부른다)을 함께 배포하였다. R 패키지 nycflights13에 들어있지만 자동으로 tibble 패키지가 함께 로딩 되므로 우리는 그 패키지 없이도 사용할 수 있도록 새로이 저장된 nycflights.RData 파일을 읽을 것이다.
 
-nycflights는 2013년에 미국 뉴욕시에서 출발한 모든 항공 관련 시간대 기록 장부를 다섯 개의 테이블로 정리한 자료철이다.  자료를 통틀어서 결측값에는 NA가 들어 있고 숫자들의 측정단위는 미국내 표준으로서 피트, 마일, 화씨 온도, 밀리바 등으로 읽으면 된다.
+nycflights는 2013년에 미국 뉴욕시에서 출발한 모든 항공 관련 시간대 기록 장부를 다섯 개의 테이블로 정리한 자료철이다.  자료를 통틀어서 결측값에는 NA가 들어 있고 숫자들의 측정단위는 미국내 표준으로서 피트, 마일, 화씨 온도, 밀리바 등으로 읽으면 된다. 
 
-
-
-
-csv 파일을 불러오면서 각각에 같은 이름의 자료철 이름을 부여했다면 테이블로(여기서는 데이터프레임) 구성되어 있다: airlines, airports, flights, planes, weather. 
+RData 파일을 불러들였다면 다음의 다섯 개 테이블이 생성된다(당장 눈에 표시되지는 않을 것이다) : airlines, airports, flights, planes, weather. 
 
 이름이 내용을 강변하므로 긴 설명이 필요치 않겠지만 알파벳 순서대로 정리해 보았다. 부족한 내용은 이 자료철에 대응하는  R 공식 설명문(https://cran.r-project.org/web/packages/nycflights13/nycflights13.pdf)을 참고해서 보충하면 좋겠다.
 
@@ -128,7 +126,6 @@ csv 파일을 불러오면서 각각에 같은 이름의 자료철 이름을 부
 
 
 ```r
-> airlines <- read.csv("https://raw.githubusercontent.com/ylee03/r_for_students_2020/master/dataset/airlines.csv", header = TRUE, stringsAsFactors = FALSE) #
 > str(airlines)
 ```
 
@@ -144,7 +141,6 @@ csv 파일을 불러오면서 각각에 같은 이름의 자료철 이름을 부
 
 
 ```r
-> airports <- read.csv("https://raw.githubusercontent.com/ylee03/r_for_students_2020/master/dataset/airports.csv", header = TRUE, stringsAsFactors = FALSE) #
 > str(airports)
 ```
 
@@ -166,7 +162,6 @@ nycflights의 중심 테이블이다. 약 33만 7천 개의 항공기 이착륙 
 
 
 ```r
-> flights <- read.csv("https://raw.githubusercontent.com/ylee03/r_for_students_2020/master/dataset/flights.csv", header = TRUE, stringsAsFactors = FALSE) #
 > str(flights)
 ```
 
@@ -216,7 +211,6 @@ nycflights의 중심 테이블이다. 약 33만 7천 개의 항공기 이착륙 
  
 
 ```r
-> planes <- read.csv("https://raw.githubusercontent.com/ylee03/r_for_students_2020/master/dataset/planes.csv", header = TRUE, stringsAsFactors = FALSE) #
 >  str(planes)
 ```
 
@@ -240,7 +234,6 @@ nycflights의 중심 테이블이다. 약 33만 7천 개의 항공기 이착륙 
  
 
 ```r
-> weather <- read.csv("https://raw.githubusercontent.com/ylee03/r_for_students_2020/master/dataset/weather.csv", header = TRUE, stringsAsFactors = FALSE) #
 >  str(weather)
 ```
 
