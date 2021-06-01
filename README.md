@@ -5,6 +5,17 @@ This site provides material for students learnig R.
 Free to use and distribute as it is.
 Created and maintained by Younsuk Lee (ylee@dgu.ac.kr) in 2021.
 
+## 2021/6/1
+
+- 과제: Orthodont 108행이지만 실제로는 27명의 피험자가 들어 있다. 연구에 참여했을 당시의 환자들의 (성별에 따른) 치아의 길이의 평균, 표준편차를 구하는 절차를 가장 짧은 코딩으로 구현한다.
+- 6월 2일 밤 9시까지
+
+## 코딩 수업 마지막 시간 예고: 황금나선 그리기
+
+황금나선은 원점을 이동하여 가면서 그린 원호로 이루어져 있다. 좌표 이동량과 원호의 반지름이 피보나치 수열로 되어 있어야 한다. 피보나치 수열을 계산하는 절차는 이미 익혔으므로 황금나선을 그리는 절차를 고안해 보자.(g2.pdf).
+
+
+
 
 ## nycflights 자료철 다시 받기(2021/5/25)
 
